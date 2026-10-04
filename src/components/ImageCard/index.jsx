@@ -1,6 +1,9 @@
 import "./index.css";
 
 const ImageCard = ({ image }) => {
+  const photographerUrl = `${image.user.links.html}?utm_source=riseupp&utm_medium=referral`;
+  const unsplashUrl = "https://unsplash.com/?utm_source=riseupp&utm_medium=referral";
+
   return (
     <div className="image-card">
       <img
@@ -18,11 +21,19 @@ const ImageCard = ({ image }) => {
         </a>
 
         <a
-          href={image.user.links.html}
+          href={photographerUrl}
           target="_blank"
           rel="noreferrer"
         >
           {image.user.name}
+        </a>
+
+        <a
+          href={unsplashUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Unsplash
         </a>
       </div>
     </div>
