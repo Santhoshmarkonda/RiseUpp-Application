@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import SearchBar from "./components/Searchbar";
-import CategoryTabs from "./components/Categorytabs";
+import SearchBar from "./components/SearchBar";
+import CategoryTabs from "./components/CategoryTabs";
 import ImageGallery from "./components/ImageGallary";
+
 
 function App() {
   const [query, setQuery] = useState("animals");
