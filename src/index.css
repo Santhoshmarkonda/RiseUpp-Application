@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --bg-1: #fdf6f0;
+  --bg-2: #f4eef7;
+  --bg-3: #eaf3f1;
+  --bg-4: #fdf1e8;
+
+  --ink: #0f0f0f;
+  --ink-soft: #4b5563;
+  --ink-muted: #8b8f98;
+
+  /* ✨ New accent — deep plum */
+  /* NEW */
+--accent: #7c3aed;
+--accent-dark: #6d28d9;
+--accent-soft: rgba(124, 58, 237, 0.12);
+
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-bg-strong: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.65);
+  --glass-shadow: 0 8px 32px rgba(15, 15, 15, 0.08);
+  --glass-shadow-lg: 0 20px 60px rgba(15, 15, 15, 0.12);
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+}

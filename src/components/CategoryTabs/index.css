@@ -1,0 +1,55 @@
+.category-tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+
+  margin: 0 auto 56px;
+  max-width: 720px;
+}
+
+.btn {
+  padding: 11px 24px;
+  border-radius: var(--radius-pill);
+
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+  text-transform: capitalize;
+
+  /* Glass pill */
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 12px rgba(15, 15, 15, 0.04);
+
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+  color: var(--accent-dark);
+  background: rgba(255, 255, 255, 0.75);
+  transform: translateY(-2px);
+  /* NEW */
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.15);
+  border-color: rgba(124, 58, 237, 0.28);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .category-tab {
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    padding: 9px 18px;
+    font-size: 13px;
+  }
+}
